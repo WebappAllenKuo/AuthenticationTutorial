@@ -1,0 +1,14 @@
+@model TModel
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+<hi>Login</hi>
+<form action="/Home/Register">
+    user name:<input type="text" name="username" value=""/>
+    <br/>
+    password: <input type="text" name="password" value=""/>
+    <br/>
+    <button type="submit">Login</button>
+</form>

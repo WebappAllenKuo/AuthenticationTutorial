@@ -5,8 +5,9 @@
     <projectFile>IdentityExample/IdentityExample.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dcde3b63-2e7e-4e9c-aa40-851fdd5fd512" name="Default Changelist" comment="add Authenticaton middelware">
-      <change beforePath="$PROJECT_DIR$/IdentityExample/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityExample/Controllers/HomeController.cs" afterDir="false" />
+    <list default="true" id="dcde3b63-2e7e-4e9c-aa40-851fdd5fd512" name="Default Changelist" comment="add Register view page">
+      <change afterPath="$PROJECT_DIR$/IdentityExample/Views/Home/Login.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityExample/Views/Home/Register.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityExample/Views/Home/Register.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +33,9 @@
       <option value="$PROJECT_DIR$/IdentityExample/Data/AppDbContext.cs" />
       <option value="$PROJECT_DIR$/IdentityExample/Startup.cs" />
       <option value="$PROJECT_DIR$/IdentityExample/Controllers/HomeController.cs" />
+      <option value="$PROJECT_DIR$/IdentityExample/Views/Home/Secret.cshtml" />
+      <option value="$PROJECT_DIR$/IdentityExample/Views/Home/Register.cshtml" />
+      <option value="$PROJECT_DIR$/IdentityExample/Views/Home/Login.cshtml" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1rKPZmOyUBeEXRnBho1zOLJOhFW" />
@@ -119,7 +123,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1618721865701</updated>
-      <workItem from="1618721871050" duration="7173000" />
+      <workItem from="1618721871050" duration="7523000" />
     </task>
     <task id="LOCAL-00001" summary="add Controllers folder">
       <created>1618721980175</created>
@@ -226,7 +230,28 @@
       <option name="project" value="LOCAL" />
       <updated>1618735501037</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="add HomeController, and Index,Register, Secret, Login, Logout actions">
+      <created>1618735740904</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1618735740904</updated>
+    </task>
+    <task id="LOCAL-00017" summary="add Secret view page">
+      <created>1618735820844</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1618735820844</updated>
+    </task>
+    <task id="LOCAL-00018" summary="add Register view page">
+      <created>1618735991714</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1618735991714</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,6 +285,9 @@
     <MESSAGE value="modify Identidy options, password policy" />
     <MESSAGE value="DI Cookie options: login path, cookie name" />
     <MESSAGE value="add Authenticaton middelware" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Authenticaton middelware" />
+    <MESSAGE value="add HomeController, and Index,Register, Secret, Login, Logout actions" />
+    <MESSAGE value="add Secret view page" />
+    <MESSAGE value="add Register view page" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Register view page" />
   </component>
 </project>

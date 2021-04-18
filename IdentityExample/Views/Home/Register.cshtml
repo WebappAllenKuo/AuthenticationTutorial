@@ -1,21 +1,16 @@
+@model TModel
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <title>title</title>
-</head>
-<body>
-<div>
-    <form action="/Home/Register">
-        user name:<input type="text" name="username" value="" />
-        <br />
-        email : <input type="text" name="email" value="" />
-        <br />
-        password: <input type="text" name="password" value="" />
-        <br />
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+<h1>Register</h1>
+<form action="/Home/Register">
+        user name:<input type="text" name="username" value=""/>
+        <br/>
+        email : <input type="text" name="email" value=""/>
+        <br/>
+        password: <input type="text" name="password" value=""/>
+        <br/>
         <button type="submit">Register</button>
-    </form>   
-</div>
-</body>
-</html>
+    </form>
