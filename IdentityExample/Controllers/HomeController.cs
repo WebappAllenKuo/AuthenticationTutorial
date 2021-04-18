@@ -54,7 +54,8 @@ namespace IdentityExample.Controllers
 
         public async Task<IActionResult> Logout()
         {
-            new NotImplementedException();
+           await _signInManager.SignOutAsync();
+           return RedirectToAction("Index");
         }
     }
 }
