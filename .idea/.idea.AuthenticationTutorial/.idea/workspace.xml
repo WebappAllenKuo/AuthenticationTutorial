@@ -4,8 +4,9 @@
     <projectFile>Basics/Basics.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dcde3b63-2e7e-4e9c-aa40-851fdd5fd512" name="Default Changelist" comment="設定 AuthenticationHandler service, add Authentication, Authorization middlewares">
+    <list default="true" id="dcde3b63-2e7e-4e9c-aa40-851fdd5fd512" name="Default Changelist" comment="bug fix: AddAuthentication(), AddCookie()裡的 AuthenticationScheme value 敄必要相同">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AuthenticationTutorial/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AuthenticationTutorial/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Basics/Controllers/HomeController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Basics/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Basics/Startup.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,15 +19,16 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/339DDC86-152F-4E17-803D-20B40DF62BE6/1/MvcServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/allen/RiderProjects/AuthenticationTutorial/Basics/Startup.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/EE0CC253-9C39-4A46-9A25-38665EE32225/2/MvcViewFeaturesMvcCoreBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/DF9D541E-58AC-46EB-9D52-95A12B55C0C5/8/ControllerEndpointRouteBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Basics/Controllers/HomeController.cs" />
       <option value="$PROJECT_DIR$/Basics/Views/Home/Index.cshtml" />
       <option value="$PROJECT_DIR$/Basics/Views/Home/Secret.cshtml" />
       <option value="$PROJECT_DIR$/Basics/Startup.cs" />
+      <option value="$PROJECT_DIR$/Basics/Controllers/HomeController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1rKPZmOyUBeEXRnBho1zOLJOhFW" />
@@ -83,7 +85,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1618721865701</updated>
-      <workItem from="1618721871050" duration="2978000" />
+      <workItem from="1618721871050" duration="3957000" />
     </task>
     <task id="LOCAL-00001" summary="add Controllers folder">
       <created>1618721980175</created>
@@ -120,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618724270648</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="bug fix: AddAuthentication(), AddCookie()裡的 AuthenticationScheme value 敄必要相同">
+      <created>1618725057200</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1618725057200</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,6 +153,7 @@
     <MESSAGE value="DI view/razor pages services; add routing rule; 執行會 error,因為還沒建立 view page of Home controller" />
     <MESSAGE value="add view pages,目前 /Home/Secret/ 會錯，因為它有 Authrorize metadata, 但找不到 AuthenticationHandler 來得知 目前使用者" />
     <MESSAGE value="設定 AuthenticationHandler service, add Authentication, Authorization middlewares" />
-    <option name="LAST_COMMIT_MESSAGE" value="設定 AuthenticationHandler service, add Authentication, Authorization middlewares" />
+    <MESSAGE value="bug fix: AddAuthentication(), AddCookie()裡的 AuthenticationScheme value 敄必要相同" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug fix: AddAuthentication(), AddCookie()裡的 AuthenticationScheme value 敄必要相同" />
   </component>
 </project>

@@ -36,7 +36,7 @@ namespace Basics
 
             app.UseRouting();
 
-            // app.UseAuthentication();
+            app.UseAuthentication();
             
             app.UseAuthorization();
             
