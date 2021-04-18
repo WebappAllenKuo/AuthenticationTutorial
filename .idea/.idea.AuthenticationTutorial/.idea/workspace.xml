@@ -5,9 +5,11 @@
     <projectFile>IdentityExample/IdentityExample.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dcde3b63-2e7e-4e9c-aa40-851fdd5fd512" name="Default Changelist" comment="fix view page model">
+    <list default="true" id="dcde3b63-2e7e-4e9c-aa40-851fdd5fd512" name="Default Changelist" comment="套件一開始安裝錯誤，已修正； 附加AddEntityFramwworkStores">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AuthenticationTutorial/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AuthenticationTutorial/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityExample/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityExample/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityExample/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityExample/Controllers/HomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityExample/Views/Home/Login.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityExample/Views/Home/Login.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityExample/Views/Home/Register.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityExample/Views/Home/Register.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,11 +33,11 @@
       <option value="$PROJECT_DIR$/Basics/Startup.cs" />
       <option value="$PROJECT_DIR$/Basics/Controllers/HomeController.cs" />
       <option value="$PROJECT_DIR$/IdentityExample/Data/AppDbContext.cs" />
+      <option value="$PROJECT_DIR$/IdentityExample/Views/Home/Secret.cshtml" />
+      <option value="$PROJECT_DIR$/IdentityExample/Startup.cs" />
       <option value="$PROJECT_DIR$/IdentityExample/Controllers/HomeController.cs" />
       <option value="$PROJECT_DIR$/IdentityExample/Views/Home/Register.cshtml" />
-      <option value="$PROJECT_DIR$/IdentityExample/Views/Home/Secret.cshtml" />
       <option value="$PROJECT_DIR$/IdentityExample/Views/Home/Login.cshtml" />
-      <option value="$PROJECT_DIR$/IdentityExample/Startup.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1rKPZmOyUBeEXRnBho1zOLJOhFW" />
@@ -47,6 +49,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.3502036" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -123,7 +127,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1618721865701</updated>
-      <workItem from="1618721871050" duration="8669000" />
+      <workItem from="1618721871050" duration="9350000" />
     </task>
     <task id="LOCAL-00001" summary="add Controllers folder">
       <created>1618721980175</created>
@@ -293,7 +297,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618736967002</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="套件一開始安裝錯誤，已修正； 附加AddEntityFramwworkStores">
+      <created>1618737538366</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1618737538366</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -336,6 +347,26 @@
     <MESSAGE value="implement Login function" />
     <MESSAGE value="implement Rregister function" />
     <MESSAGE value="fix view page model" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix view page model" />
+    <MESSAGE value="套件一開始安裝錯誤，已修正； 附加AddEntityFramwworkStores" />
+    <option name="LAST_COMMIT_MESSAGE" value="套件一開始安裝錯誤，已修正； 附加AddEntityFramwworkStores" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/IdentityExample/Controllers/HomeController.cs</url>
+          <line>46</line>
+          <properties documentPath="$PROJECT_DIR$/IdentityExample/Controllers/HomeController.cs" initialLine="46" containingFunctionPresentation="method 'Register'">
+            <startOffsets>
+              <option value="1482" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1608" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

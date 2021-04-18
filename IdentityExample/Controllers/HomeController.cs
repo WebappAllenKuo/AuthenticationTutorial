@@ -53,6 +53,7 @@ namespace IdentityExample.Controllers
             if (!result.Succeeded)
             {
                 ModelState.AddModelError(string.Empty,"regsiter fail");
+                AddErrors(result.Errors);
                 return View();
             }
             
@@ -61,6 +62,14 @@ namespace IdentityExample.Controllers
             ProcessSignIn(user);
 
             return RedirectToAction("Index");
+        }
+
+        private void AddErrors(IEnumerable<IdentityError> resultErrors)
+        {
+            string msg = resultErrors.Select(x => x.Description)
+                    .Aggregate((acc, next) => acc += next)
+                ;
+            _logger.LogWarning(msg,null);
         }
 
         [Authorize]
