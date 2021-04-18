@@ -34,7 +34,7 @@ namespace IdentityExample.Controllers
             _emailService = emailService;
         }
 
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
             // 測試成功，暫時 mark掉
             // await _emailService.SendAsync("allen@test.com", "subject", "body");
@@ -80,9 +80,9 @@ namespace IdentityExample.Controllers
             return RedirectToAction("EmailVerification");
         }
 
-        private void SendConfirmEmail(IdentityUser user)
+        private async Task SendConfirmEmail(IdentityUser user)
         {
-            var code = _userManager.GenerateEmailConfirmationTokenAsync(user);
+            var code =await _userManager.GenerateEmailConfirmationTokenAsync(user);
             var link = Url.Action("VerifyEmail", "Home", 
                                     new {userId = user.Id, code}, 
                                     Request.Scheme,
@@ -146,5 +146,22 @@ namespace IdentityExample.Controllers
         }
 
         public IActionResult EmailVerification() => View();
+
+        public async Task<IActionResult> VerifyEmail(string userId, string code)
+        {
+            // 新會員按下email裡的連結時，會連結到此頁
+            var user =await _userManager.FindByIdAsync(userId);
+            if (user == null) return BadRequest();
+
+            var result = await _userManager.ConfirmEmailAsync(user, code);
+            if (!result.Succeeded)
+            {
+                string msg = result.Errors.Select(x => x.Description)
+                    .Aggregate((acc, next) => acc += next);
+                return Content(msg);
+            }
+
+            return View();
+        }
     }
 }
