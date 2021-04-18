@@ -42,8 +42,26 @@ namespace IdentityExample.Controllers
         public IActionResult Register() => View();
 
         [HttpPost]
-        public async Task<IActionResult> Register(string userName, string email, string password) =>
-            new NotImplementedException();
+        public async Task<IActionResult> Register(string userName, string email, string password)
+        {
+            var newUser = new IdentityUser
+            {
+                UserName = userName,
+                Email = email
+            };
+            var result =await _userManager.CreateAsync(newUser, password);
+            if (!result.Succeeded)
+            {
+                ModelState.AddModelError(string.Empty,"regsiter fail");
+                return View();
+            }
+            
+            // sign in
+            var user = await _userManager.FindByNameAsync(userName);
+            ProcessSignIn(user);
+
+            return RedirectToAction("Index");
+        }
 
         [Authorize]
         public IActionResult Secret() => View();
