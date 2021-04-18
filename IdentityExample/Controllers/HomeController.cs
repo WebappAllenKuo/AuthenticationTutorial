@@ -75,9 +75,22 @@ namespace IdentityExample.Controllers
             // return RedirectToAction("Index");
             
             // 寄送 verify email
-            // todo
+            SendConfirmEmail(newUser);
             
             return RedirectToAction("EmailVerification");
+        }
+
+        private void SendConfirmEmail(IdentityUser user)
+        {
+            var code = _userManager.GenerateEmailConfirmationTokenAsync(user);
+            var link = Url.Action("VerifyEmail", "Home", 
+                                    new {userId = user.Id, code}, 
+                                    Request.Scheme,
+                                    Request.Host.ToString());
+            var body = $"如果你有申請加入 xx 網站會員，請按下 <a href={link}>確認 email </a> 的連結";
+            bool isHmtl = true;
+            
+            _emailService.SendAsync(user.Email, "new member register confirm", body, isHmtl);
         }
 
         private void AddErrors(IEnumerable<IdentityError> resultErrors)

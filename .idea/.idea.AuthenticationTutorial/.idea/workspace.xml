@@ -5,8 +5,7 @@
     <projectFile>IdentityExample/IdentityExample.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dcde3b63-2e7e-4e9c-aa40-851fdd5fd512" name="Default Changelist" comment="modify ProcessSignIn, 若沒按過確認email,會無法通過 PasswordSignInAsync()">
-      <change afterPath="$PROJECT_DIR$/IdentityExample/Views/Home/EmailVerification.cshtml" afterDir="false" />
+    <list default="true" id="dcde3b63-2e7e-4e9c-aa40-851fdd5fd512" name="Default Changelist" comment="add EmailVerification page">
       <change beforePath="$PROJECT_DIR$/IdentityExample/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityExample/Controllers/HomeController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,8 +36,8 @@
       <option value="$PROJECT_DIR$/IdentityExample/Views/Home/Login.cshtml" />
       <option value="$PROJECT_DIR$/IdentityExample/appsettings.json" />
       <option value="$PROJECT_DIR$/IdentityExample/Startup.cs" />
-      <option value="$PROJECT_DIR$/IdentityExample/Controllers/HomeController.cs" />
       <option value="$PROJECT_DIR$/IdentityExample/Views/Home/EmailVerification.cshtml" />
+      <option value="$PROJECT_DIR$/IdentityExample/Controllers/HomeController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1rKPZmOyUBeEXRnBho1zOLJOhFW" />
@@ -128,7 +127,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1618721865701</updated>
-      <workItem from="1618721871050" duration="12606000" />
+      <workItem from="1618721871050" duration="12962000" />
     </task>
     <task id="LOCAL-00001" summary="add Controllers folder">
       <created>1618721980175</created>
@@ -368,7 +367,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618758797294</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="add EmailVerification page">
+      <created>1618759033120</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1618759033120</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -387,7 +393,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="add 3 pakcages" />
     <MESSAGE value="add AppDbContext" />
     <MESSAGE value="DI DbContext service" />
     <MESSAGE value="modify Identidy options, password policy" />
@@ -412,20 +417,21 @@
     <MESSAGE value="在 Home/Index 撰寫寄信測試功能，成功" />
     <MESSAGE value="新會員必需確認 Email 才能登入 ，config.User.RequireUniqueEmail = true;" />
     <MESSAGE value="modify ProcessSignIn, 若沒按過確認email,會無法通過 PasswordSignInAsync()" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify ProcessSignIn, 若沒按過確認email,會無法通過 PasswordSignInAsync()" />
+    <MESSAGE value="add EmailVerification page" />
+    <option name="LAST_COMMIT_MESSAGE" value="add EmailVerification page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/IdentityExample/Controllers/HomeController.cs</url>
-          <line>121</line>
+          <line>134</line>
           <properties documentPath="$PROJECT_DIR$/IdentityExample/Controllers/HomeController.cs" initialLine="116" containingFunctionPresentation="method 'ProcessSignIn'">
             <startOffsets>
-              <option value="3905" />
+              <option value="4540" />
             </startOffsets>
             <endOffsets>
-              <option value="3988" />
+              <option value="4623" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="5" />
