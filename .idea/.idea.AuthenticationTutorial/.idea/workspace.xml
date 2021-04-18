@@ -5,8 +5,8 @@
     <projectFile>IdentityExample/IdentityExample.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dcde3b63-2e7e-4e9c-aa40-851fdd5fd512" name="Default Changelist" comment="DI DbContext service">
-      <change beforePath="$PROJECT_DIR$/IdentityExample/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityExample/Startup.cs" afterDir="false" />
+    <list default="true" id="dcde3b63-2e7e-4e9c-aa40-851fdd5fd512" name="Default Changelist" comment="add Authenticaton middelware">
+      <change beforePath="$PROJECT_DIR$/IdentityExample/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityExample/Controllers/HomeController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +31,7 @@
       <option value="$PROJECT_DIR$/Basics/Controllers/HomeController.cs" />
       <option value="$PROJECT_DIR$/IdentityExample/Data/AppDbContext.cs" />
       <option value="$PROJECT_DIR$/IdentityExample/Startup.cs" />
+      <option value="$PROJECT_DIR$/IdentityExample/Controllers/HomeController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1rKPZmOyUBeEXRnBho1zOLJOhFW" />
@@ -118,7 +119,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1618721865701</updated>
-      <workItem from="1618721871050" duration="6850000" />
+      <workItem from="1618721871050" duration="7173000" />
     </task>
     <task id="LOCAL-00001" summary="add Controllers folder">
       <created>1618721980175</created>
@@ -204,7 +205,28 @@
       <option name="project" value="LOCAL" />
       <updated>1618735158332</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="modify Identidy options, password policy">
+      <created>1618735404579</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1618735404579</updated>
+    </task>
+    <task id="LOCAL-00014" summary="DI Cookie options: login path, cookie name">
+      <created>1618735473150</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1618735473150</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add Authenticaton middelware">
+      <created>1618735501037</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1618735501037</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,6 +257,9 @@
     <MESSAGE value="add 3 pakcages" />
     <MESSAGE value="add AppDbContext" />
     <MESSAGE value="DI DbContext service" />
-    <option name="LAST_COMMIT_MESSAGE" value="DI DbContext service" />
+    <MESSAGE value="modify Identidy options, password policy" />
+    <MESSAGE value="DI Cookie options: login path, cookie name" />
+    <MESSAGE value="add Authenticaton middelware" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Authenticaton middelware" />
   </component>
 </project>
