@@ -5,7 +5,10 @@
     <projectFile>IdentityExample/IdentityExample.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dcde3b63-2e7e-4e9c-aa40-851fdd5fd512" name="Default Changelist" comment="implement Rregister function" />
+    <list default="true" id="dcde3b63-2e7e-4e9c-aa40-851fdd5fd512" name="Default Changelist" comment="fix view page model">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AuthenticationTutorial/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AuthenticationTutorial/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityExample/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityExample/Startup.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,11 +31,11 @@
       <option value="$PROJECT_DIR$/Basics/Startup.cs" />
       <option value="$PROJECT_DIR$/Basics/Controllers/HomeController.cs" />
       <option value="$PROJECT_DIR$/IdentityExample/Data/AppDbContext.cs" />
-      <option value="$PROJECT_DIR$/IdentityExample/Startup.cs" />
+      <option value="$PROJECT_DIR$/IdentityExample/Controllers/HomeController.cs" />
+      <option value="$PROJECT_DIR$/IdentityExample/Views/Home/Register.cshtml" />
       <option value="$PROJECT_DIR$/IdentityExample/Views/Home/Secret.cshtml" />
       <option value="$PROJECT_DIR$/IdentityExample/Views/Home/Login.cshtml" />
-      <option value="$PROJECT_DIR$/IdentityExample/Views/Home/Register.cshtml" />
-      <option value="$PROJECT_DIR$/IdentityExample/Controllers/HomeController.cs" />
+      <option value="$PROJECT_DIR$/IdentityExample/Startup.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1rKPZmOyUBeEXRnBho1zOLJOhFW" />
@@ -50,7 +53,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.Basics">
+  <component name="RunManager" selected=".NET Launch Settings Profile.IdentityExample">
     <configuration name="Basics" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Basics/Basics.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
@@ -120,7 +123,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1618721865701</updated>
-      <workItem from="1618721871050" duration="8340000" />
+      <workItem from="1618721871050" duration="8669000" />
     </task>
     <task id="LOCAL-00001" summary="add Controllers folder">
       <created>1618721980175</created>
@@ -283,7 +286,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618736768726</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="fix view page model">
+      <created>1618736967002</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1618736967002</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,6 +335,7 @@
     <MESSAGE value="implement Logout function" />
     <MESSAGE value="implement Login function" />
     <MESSAGE value="implement Rregister function" />
-    <option name="LAST_COMMIT_MESSAGE" value="implement Rregister function" />
+    <MESSAGE value="fix view page model" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix view page model" />
   </component>
 </project>

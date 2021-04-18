@@ -5,9 +5,9 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="ECommerce.Data.EntityFramework.InMemory" Version="1.0.1" />
       <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.14" />
       <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.14" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="3.1.14" />
     </ItemGroup>
 
 </Project>
