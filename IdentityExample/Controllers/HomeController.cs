@@ -68,11 +68,16 @@ namespace IdentityExample.Controllers
                 return View();
             }
             
-            // sign in
-            var user = await _userManager.FindByNameAsync(userName);
-            ProcessSignIn(user, password);
-
-            return RedirectToAction("Index");
+            // // sign in
+            // var user = await _userManager.FindByNameAsync(userName);
+            // ProcessSignIn(user, password);
+            //
+            // return RedirectToAction("Index");
+            
+            // 寄送 verify email
+            // todo
+            
+            return RedirectToAction("EmailVerification");
         }
 
         private void AddErrors(IEnumerable<IdentityError> resultErrors)
@@ -126,5 +131,7 @@ namespace IdentityExample.Controllers
            await _signInManager.SignOutAsync();
            return RedirectToAction("Index");
         }
+
+        public IActionResult EmailVerification() => View();
     }
 }
