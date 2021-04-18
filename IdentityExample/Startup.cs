@@ -42,6 +42,12 @@ namespace IdentityExample
                 config.User.RequireUniqueEmail = true;
                 
             });
+
+            services.ConfigureApplicationCookie(config =>
+            {
+                config.Cookie.Name = "Identity.Cookie";
+                config.LoginPath = "/Home/Login";
+            });
             
             services.AddControllersWithViews();
         }
