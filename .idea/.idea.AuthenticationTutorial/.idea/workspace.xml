@@ -4,8 +4,9 @@
     <projectFile>Basics/Basics.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dcde3b63-2e7e-4e9c-aa40-851fdd5fd512" name="Default Changelist" comment="add HomeController, append Index, Authenticate, Secret action; 目前無法檢視此三頁的原因是必需在 endpoints加入 mapping rule才行">
-      <change beforePath="$PROJECT_DIR$/Basics/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Basics/Startup.cs" afterDir="false" />
+    <list default="true" id="dcde3b63-2e7e-4e9c-aa40-851fdd5fd512" name="Default Changelist" comment="DI view/razor pages services; add routing rule; 執行會 error,因為還沒建立 view page of Home controller">
+      <change afterPath="$PROJECT_DIR$/Basics/Views/Home/Index.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics/Views/Home/Secret.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +25,8 @@
     <changedPaths>
       <option value="$PROJECT_DIR$/Basics/Controllers/HomeController.cs" />
       <option value="$PROJECT_DIR$/Basics/Startup.cs" />
+      <option value="$PROJECT_DIR$/Basics/Views/Home/Index.cshtml" />
+      <option value="$PROJECT_DIR$/Basics/Views/Home/Secret.cshtml" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1rKPZmOyUBeEXRnBho1zOLJOhFW" />
@@ -80,7 +83,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1618721865701</updated>
-      <workItem from="1618721871050" duration="794000" />
+      <workItem from="1618721871050" duration="1188000" />
     </task>
     <task id="LOCAL-00001" summary="add Controllers folder">
       <created>1618721980175</created>
@@ -96,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618722135838</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="DI view/razor pages services; add routing rule; 執行會 error,因為還沒建立 view page of Home controller">
+      <created>1618723022096</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1618723022096</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,6 +127,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="add Controllers folder" />
     <MESSAGE value="add HomeController, append Index, Authenticate, Secret action; 目前無法檢視此三頁的原因是必需在 endpoints加入 mapping rule才行" />
-    <option name="LAST_COMMIT_MESSAGE" value="add HomeController, append Index, Authenticate, Secret action; 目前無法檢視此三頁的原因是必需在 endpoints加入 mapping rule才行" />
+    <MESSAGE value="DI view/razor pages services; add routing rule; 執行會 error,因為還沒建立 view page of Home controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="DI view/razor pages services; add routing rule; 執行會 error,因為還沒建立 view page of Home controller" />
   </component>
 </project>
