@@ -17,7 +17,7 @@ namespace Basics
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddAuthentication("CookieAuth")
-                .AddCookie("Cookie", config =>
+                .AddCookie("CookieAuth", config =>
                 {
                     config.Cookie.Name = "MyCookieName";
                     config.LoginPath = "/Home/Authenticate";
@@ -36,7 +36,7 @@ namespace Basics
 
             app.UseRouting();
 
-            app.UseAuthentication();
+            // app.UseAuthentication();
             
             app.UseAuthorization();
             
