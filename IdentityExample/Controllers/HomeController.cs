@@ -36,7 +36,8 @@ namespace IdentityExample.Controllers
 
         public async Task<IActionResult> Index()
         {
-            await _emailService.SendAsync("allen@test.com", "subject", "body");
+            // 測試成功，暫時 mark掉
+            // await _emailService.SendAsync("allen@test.com", "subject", "body");
 
             return View();
             

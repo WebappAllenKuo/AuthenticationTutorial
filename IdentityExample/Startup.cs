@@ -41,7 +41,7 @@ namespace IdentityExample
                 config.Password.RequireUppercase = false;
                 config.Password.RequireNonAlphanumeric = false;
 
-                // config.User.RequireUniqueEmail = true;
+                config.User.RequireUniqueEmail = true;
                 
             })
                 .AddEntityFrameworkStores<AppDbContext>()
