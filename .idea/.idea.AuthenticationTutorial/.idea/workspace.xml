@@ -5,9 +5,8 @@
     <projectFile>IdentityExample/IdentityExample.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dcde3b63-2e7e-4e9c-aa40-851fdd5fd512" name="Default Changelist" comment="Ep01 complete">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AuthenticationTutorial/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AuthenticationTutorial/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthenticationTutorial.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AuthenticationTutorial.sln" afterDir="false" />
+    <list default="true" id="dcde3b63-2e7e-4e9c-aa40-851fdd5fd512" name="Default Changelist" comment="add 3 pakcages">
+      <change afterPath="$PROJECT_DIR$/IdentityExample/Data/AppDbContext.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +28,7 @@
       <option value="$PROJECT_DIR$/Basics/Views/Home/Secret.cshtml" />
       <option value="$PROJECT_DIR$/Basics/Startup.cs" />
       <option value="$PROJECT_DIR$/Basics/Controllers/HomeController.cs" />
+      <option value="$PROJECT_DIR$/IdentityExample/Data/AppDbContext.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1rKPZmOyUBeEXRnBho1zOLJOhFW" />
@@ -116,7 +116,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1618721865701</updated>
-      <workItem from="1618721871050" duration="6121000" />
+      <workItem from="1618721871050" duration="6428000" />
     </task>
     <task id="LOCAL-00001" summary="add Controllers folder">
       <created>1618721980175</created>
@@ -174,7 +174,21 @@
       <option name="project" value="LOCAL" />
       <updated>1618729533353</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add MVC project 'IdentityExample', and assign target version from 5 to 3.1">
+      <created>1618734694152</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1618734694152</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add 3 pakcages">
+      <created>1618734855780</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1618734855780</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,6 +215,8 @@
     <MESSAGE value="bug fix: AddAuthentication(), AddCookie()裡的 AuthenticationScheme value 敄必要相同" />
     <MESSAGE value="實作 Home/Authenctcate，第一次連結 Home/Secret/，會先到Home/Authenticate 填好 Cookie 並導向到 Home/Index; 之後再連結 Home/Secret時，由於 CookieAuthenticationHandler從cookie取得token並填入HttpContext.User中，AuthorizationHandler做了判斷，就允許存取 Home/secret(第二次以後，不會每次都到 home/Authentact)" />
     <MESSAGE value="Ep01 complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ep01 complete" />
+    <MESSAGE value="add MVC project 'IdentityExample', and assign target version from 5 to 3.1" />
+    <MESSAGE value="add 3 pakcages" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 3 pakcages" />
   </component>
 </project>
