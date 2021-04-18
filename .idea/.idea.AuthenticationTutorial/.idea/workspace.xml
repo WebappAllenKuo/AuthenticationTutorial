@@ -5,9 +5,10 @@
     <projectFile>IdentityExample/IdentityExample.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dcde3b63-2e7e-4e9c-aa40-851fdd5fd512" name="Default Changelist" comment="inject IEmailService in HomeController constructor">
+    <list default="true" id="dcde3b63-2e7e-4e9c-aa40-851fdd5fd512" name="Default Changelist" comment="新會員必需確認 Email 才能登入 ，config.User.RequireUniqueEmail = true;">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AuthenticationTutorial/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AuthenticationTutorial/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IdentityExample/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityExample/Controllers/HomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityExample/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityExample/Startup.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +128,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1618721865701</updated>
-      <workItem from="1618721871050" duration="11196000" />
+      <workItem from="1618721871050" duration="12091000" />
     </task>
     <task id="LOCAL-00001" summary="add Controllers folder">
       <created>1618721980175</created>
@@ -346,7 +347,21 @@
       <option name="project" value="LOCAL" />
       <updated>1618757119563</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="在 Home/Index 撰寫寄信測試功能，成功">
+      <created>1618757752901</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1618757752901</updated>
+    </task>
+    <task id="LOCAL-00033" summary="新會員必需確認 Email 才能登入 ，config.User.RequireUniqueEmail = true;">
+      <created>1618757857078</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1618757857078</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,8 +380,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="實作 Home/Authenctcate，第一次連結 Home/Secret/，會先到Home/Authenticate 填好 Cookie 並導向到 Home/Index; 之後再連結 Home/Secret時，由於 CookieAuthenticationHandler從cookie取得token並填入HttpContext.User中，AuthorizationHandler做了判斷，就允許存取 Home/secret(第二次以後，不會每次都到 home/Authentact)" />
-    <MESSAGE value="Ep01 complete" />
     <MESSAGE value="add MVC project 'IdentityExample', and assign target version from 5 to 3.1" />
     <MESSAGE value="add 3 pakcages" />
     <MESSAGE value="add AppDbContext" />
@@ -390,36 +403,25 @@
     <MESSAGE value="add NetCore.MailKit package" />
     <MESSAGE value="inject MailKitOptions, MailKit service" />
     <MESSAGE value="inject IEmailService in HomeController constructor" />
-    <option name="LAST_COMMIT_MESSAGE" value="inject IEmailService in HomeController constructor" />
+    <MESSAGE value="在 Home/Index 撰寫寄信測試功能，成功" />
+    <MESSAGE value="新會員必需確認 Email 才能登入 ，config.User.RequireUniqueEmail = true;" />
+    <option name="LAST_COMMIT_MESSAGE" value="新會員必需確認 Email 才能登入 ，config.User.RequireUniqueEmail = true;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/IdentityExample/Controllers/HomeController.cs</url>
-          <line>56</line>
-          <properties documentPath="$PROJECT_DIR$/IdentityExample/Controllers/HomeController.cs" initialLine="46" containingFunctionPresentation="method 'Register'">
+          <line>116</line>
+          <properties documentPath="$PROJECT_DIR$/IdentityExample/Controllers/HomeController.cs" initialLine="116" containingFunctionPresentation="method 'ProcessSignIn'">
             <startOffsets>
-              <option value="1807" />
+              <option value="3744" />
             </startOffsets>
             <endOffsets>
-              <option value="1933" />
+              <option value="3822" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/IdentityExample/Controllers/HomeController.cs</url>
-          <line>38</line>
-          <properties documentPath="$PROJECT_DIR$/IdentityExample/Controllers/HomeController.cs" initialLine="36" containingFunctionPresentation="method 'Index'">
-            <startOffsets>
-              <option value="1221" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1288" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="2" />
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -42,7 +42,8 @@ namespace IdentityExample
                 config.Password.RequireNonAlphanumeric = false;
 
                 config.User.RequireUniqueEmail = true;
-                
+
+                config.SignIn.RequireConfirmedEmail = true;
             })
                 .AddEntityFrameworkStores<AppDbContext>()
                 .AddDefaultTokenProviders();

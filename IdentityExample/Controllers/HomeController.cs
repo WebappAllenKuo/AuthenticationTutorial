@@ -70,7 +70,7 @@ namespace IdentityExample.Controllers
             
             // sign in
             var user = await _userManager.FindByNameAsync(userName);
-            ProcessSignIn(user);
+            ProcessSignIn(user, password);
 
             return RedirectToAction("Index");
         }
@@ -102,7 +102,7 @@ namespace IdentityExample.Controllers
             if (result.Succeeded)
             {
                 // sign
-                await ProcessSignIn(user);
+                await ProcessSignIn(user, password);
                 return RedirectToAction("Index");
             }
             else
@@ -112,9 +112,13 @@ namespace IdentityExample.Controllers
             }
         }
 
-        private async Task ProcessSignIn(IdentityUser user)
+        private async Task ProcessSignIn(IdentityUser user, string password)
         {
-            await _signInManager.SignInAsync(user, new AuthenticationProperties(null));
+            var result =await _signInManager.PasswordSignInAsync(user, password, false, false);
+            if (result.Succeeded)
+            {
+                await _signInManager.SignInAsync(user, new AuthenticationProperties(null));
+            }
         }
 
         public async Task<IActionResult> Logout()
