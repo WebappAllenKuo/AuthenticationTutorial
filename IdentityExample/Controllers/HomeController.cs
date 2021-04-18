@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using IdentityExample.Models;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 
@@ -50,7 +51,33 @@ namespace IdentityExample.Controllers
         public IActionResult Login() => View();
 
         [HttpPost]
-        public async Task<IActionResult> Login(string userName, string password) => new NotImplementedException();
+        public async Task<IActionResult> Login(string userName, string password)
+        {
+            var user = await _userManager.FindByNameAsync(userName);
+            if (user == null)
+            {
+                ModelState.AddModelError(string.Empty,"user not found");
+                return View();
+            }
+
+            var result = await _signInManager.CheckPasswordSignInAsync(user, password, false);
+            if (result.Succeeded)
+            {
+                // sign
+                await ProcessSignIn(user);
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                ModelState.AddModelError(string.Empty,"password error");
+                return View();
+            }
+        }
+
+        private async Task ProcessSignIn(IdentityUser user)
+        {
+            await _signInManager.SignInAsync(user, new AuthenticationProperties(null));
+        }
 
         public async Task<IActionResult> Logout()
         {
