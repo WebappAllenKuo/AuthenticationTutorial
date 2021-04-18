@@ -11,6 +11,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using NETCore.MailKit.Extensions;
+using NETCore.MailKit.Infrastructure.Internal;
 
 namespace IdentityExample
 {
@@ -39,8 +41,9 @@ namespace IdentityExample
                 config.Password.RequireUppercase = false;
                 config.Password.RequireNonAlphanumeric = false;
 
-                // config.User.RequireUniqueEmail = true;
-                
+                config.User.RequireUniqueEmail = true;
+
+                config.SignIn.RequireConfirmedEmail = true;
             })
                 .AddEntityFrameworkStores<AppDbContext>()
                 .AddDefaultTokenProviders();
@@ -49,6 +52,14 @@ namespace IdentityExample
             {
                 config.Cookie.Name = "Identity.Cookie";
                 config.LoginPath = "/Home/Login";
+            });
+
+            var emailVerifyOptions = Configuration
+                                    .GetSection("EmailVerify")
+                                    .Get<MailKitOptions>();
+            services.AddMailKit(optionBuilder =>
+            {
+                optionBuilder.UseMailKit(emailVerifyOptions);
             });
             
             services.AddControllersWithViews();

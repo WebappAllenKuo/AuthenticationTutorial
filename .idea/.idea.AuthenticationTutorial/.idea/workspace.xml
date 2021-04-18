@@ -5,11 +5,14 @@
     <projectFile>IdentityExample/IdentityExample.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dcde3b63-2e7e-4e9c-aa40-851fdd5fd512" name="Default Changelist" comment="套件一開始安裝錯誤，已修正； 附加AddEntityFramwworkStores">
+    <list default="true" id="dcde3b63-2e7e-4e9c-aa40-851fdd5fd512" name="Default Changelist" comment="add SendConfirmEmail()">
+      <change afterPath="$PROJECT_DIR$/IdentityExample/Views/Home/EmailVerification.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IdentityExample/Views/Home/VerifyEmail.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AuthenticationTutorial/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AuthenticationTutorial/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IdentityExample/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityExample/Controllers/HomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityExample/Views/Home/Login.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityExample/Views/Home/Login.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityExample/Views/Home/Register.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityExample/Views/Home/Register.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityExample/IdentityExample.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityExample/IdentityExample.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityExample/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityExample/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityExample/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityExample/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +27,7 @@
     <setting file="mock:///Users/allen/RiderProjects/AuthenticationTutorial/Basics/Startup.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/EE0CC253-9C39-4A46-9A25-38665EE32225/2/MvcViewFeaturesMvcCoreBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/DF9D541E-58AC-46EB-9D52-95A12B55C0C5/8/ControllerEndpointRouteBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D6773E12-C9A9-4474-A148-DAB639DFD650/a2/4aafad6c/ServicesCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/FA09459A-D8C1-461E-A93D-00BE0C642522/2/IdentityServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -34,10 +38,13 @@
       <option value="$PROJECT_DIR$/Basics/Controllers/HomeController.cs" />
       <option value="$PROJECT_DIR$/IdentityExample/Data/AppDbContext.cs" />
       <option value="$PROJECT_DIR$/IdentityExample/Views/Home/Secret.cshtml" />
-      <option value="$PROJECT_DIR$/IdentityExample/Startup.cs" />
-      <option value="$PROJECT_DIR$/IdentityExample/Controllers/HomeController.cs" />
       <option value="$PROJECT_DIR$/IdentityExample/Views/Home/Register.cshtml" />
       <option value="$PROJECT_DIR$/IdentityExample/Views/Home/Login.cshtml" />
+      <option value="$PROJECT_DIR$/IdentityExample/appsettings.json" />
+      <option value="$PROJECT_DIR$/IdentityExample/Startup.cs" />
+      <option value="$PROJECT_DIR$/IdentityExample/Views/Home/EmailVerification.cshtml" />
+      <option value="$PROJECT_DIR$/IdentityExample/Views/Home/VerifyEmail.cshtml" />
+      <option value="$PROJECT_DIR$/IdentityExample/Controllers/HomeController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1rKPZmOyUBeEXRnBho1zOLJOhFW" />
@@ -127,7 +134,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1618721865701</updated>
-      <workItem from="1618721871050" duration="9350000" />
+      <workItem from="1618721871050" duration="13629000" />
     </task>
     <task id="LOCAL-00001" summary="add Controllers folder">
       <created>1618721980175</created>
@@ -304,7 +311,84 @@
       <option name="project" value="LOCAL" />
       <updated>1618737538366</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="fix form method">
+      <created>1618737893089</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1618737893089</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Ep02 Identity Authentication Complete">
+      <created>1618738125994</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1618738125994</updated>
+    </task>
+    <task id="LOCAL-00028" summary="set EmailVerify">
+      <created>1618756591036</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1618756591036</updated>
+    </task>
+    <task id="LOCAL-00029" summary="add NetCore.MailKit package">
+      <created>1618756636236</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1618756636236</updated>
+    </task>
+    <task id="LOCAL-00030" summary="inject MailKitOptions, MailKit service">
+      <created>1618757037970</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1618757037970</updated>
+    </task>
+    <task id="LOCAL-00031" summary="inject IEmailService in HomeController constructor">
+      <created>1618757119563</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1618757119563</updated>
+    </task>
+    <task id="LOCAL-00032" summary="在 Home/Index 撰寫寄信測試功能，成功">
+      <created>1618757752901</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1618757752901</updated>
+    </task>
+    <task id="LOCAL-00033" summary="新會員必需確認 Email 才能登入 ，config.User.RequireUniqueEmail = true;">
+      <created>1618757857078</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1618757857078</updated>
+    </task>
+    <task id="LOCAL-00034" summary="modify ProcessSignIn, 若沒按過確認email,會無法通過 PasswordSignInAsync()">
+      <created>1618758797294</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1618758797294</updated>
+    </task>
+    <task id="LOCAL-00035" summary="add EmailVerification page">
+      <created>1618759033120</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1618759033120</updated>
+    </task>
+    <task id="LOCAL-00036" summary="add SendConfirmEmail()">
+      <created>1618759406996</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1618759406996</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,17 +407,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="add Controllers folder" />
-    <MESSAGE value="add HomeController, append Index, Authenticate, Secret action; 目前無法檢視此三頁的原因是必需在 endpoints加入 mapping rule才行" />
-    <MESSAGE value="DI view/razor pages services; add routing rule; 執行會 error,因為還沒建立 view page of Home controller" />
-    <MESSAGE value="add view pages,目前 /Home/Secret/ 會錯，因為它有 Authrorize metadata, 但找不到 AuthenticationHandler 來得知 目前使用者" />
-    <MESSAGE value="設定 AuthenticationHandler service, add Authentication, Authorization middlewares" />
-    <MESSAGE value="bug fix: AddAuthentication(), AddCookie()裡的 AuthenticationScheme value 敄必要相同" />
-    <MESSAGE value="實作 Home/Authenctcate，第一次連結 Home/Secret/，會先到Home/Authenticate 填好 Cookie 並導向到 Home/Index; 之後再連結 Home/Secret時，由於 CookieAuthenticationHandler從cookie取得token並填入HttpContext.User中，AuthorizationHandler做了判斷，就允許存取 Home/secret(第二次以後，不會每次都到 home/Authentact)" />
-    <MESSAGE value="Ep01 complete" />
-    <MESSAGE value="add MVC project 'IdentityExample', and assign target version from 5 to 3.1" />
-    <MESSAGE value="add 3 pakcages" />
-    <MESSAGE value="add AppDbContext" />
     <MESSAGE value="DI DbContext service" />
     <MESSAGE value="modify Identidy options, password policy" />
     <MESSAGE value="DI Cookie options: login path, cookie name" />
@@ -348,23 +421,47 @@
     <MESSAGE value="implement Rregister function" />
     <MESSAGE value="fix view page model" />
     <MESSAGE value="套件一開始安裝錯誤，已修正； 附加AddEntityFramwworkStores" />
-    <option name="LAST_COMMIT_MESSAGE" value="套件一開始安裝錯誤，已修正； 附加AddEntityFramwworkStores" />
+    <MESSAGE value="fix form method" />
+    <MESSAGE value="Ep02 Identity Authentication Complete" />
+    <MESSAGE value="set EmailVerify" />
+    <MESSAGE value="add NetCore.MailKit package" />
+    <MESSAGE value="inject MailKitOptions, MailKit service" />
+    <MESSAGE value="inject IEmailService in HomeController constructor" />
+    <MESSAGE value="在 Home/Index 撰寫寄信測試功能，成功" />
+    <MESSAGE value="新會員必需確認 Email 才能登入 ，config.User.RequireUniqueEmail = true;" />
+    <MESSAGE value="modify ProcessSignIn, 若沒按過確認email,會無法通過 PasswordSignInAsync()" />
+    <MESSAGE value="add EmailVerification page" />
+    <MESSAGE value="add SendConfirmEmail()" />
+    <option name="LAST_COMMIT_MESSAGE" value="add SendConfirmEmail()" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/IdentityExample/Controllers/HomeController.cs</url>
-          <line>46</line>
-          <properties documentPath="$PROJECT_DIR$/IdentityExample/Controllers/HomeController.cs" initialLine="46" containingFunctionPresentation="method 'Register'">
+          <line>134</line>
+          <properties documentPath="$PROJECT_DIR$/IdentityExample/Controllers/HomeController.cs" initialLine="116" containingFunctionPresentation="method 'ProcessSignIn'">
             <startOffsets>
-              <option value="1482" />
+              <option value="4539" />
             </startOffsets>
             <endOffsets>
-              <option value="1608" />
+              <option value="4622" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/IdentityExample/Controllers/HomeController.cs</url>
+          <line>155</line>
+          <properties documentPath="$PROJECT_DIR$/IdentityExample/Controllers/HomeController.cs" initialLine="155" containingFunctionPresentation="method 'VerifyEmail'">
+            <startOffsets>
+              <option value="5270" />
+            </startOffsets>
+            <endOffsets>
+              <option value="5332" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
